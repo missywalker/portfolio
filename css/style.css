@@ -83,6 +83,366 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*General Styles*/
+html {
+  font-size: 16px;
+}
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #351D77;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #351D77;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Alata', sans-serif;
+}
+p, li {
+  font-family: 'Nunito Sans', sans-serif;
+}
+h1 {
+  color: #351D77;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  width: 100%
+}
+
+h2 {
+  color: #351D77;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 100%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+span {
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+  
+.project-link, 
+.language-wrapper,
+.tool-wrapper {
+  text-transform:uppercase;
+  font-size: 1.125rem;
+  color: #351D77;
+}
+
+/***** Structural Styles *****/
+
+header,
+#projects,
+#skills,
+#about,
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {
+  width: 85%;
+}
+
+#projects p,
+#about p {
+  width: 100%;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+nav {
+  margin-bottom: 60px;
+}
+
+#projects {
+  padding-top: 60px;
+}
+
+#skills {
+  padding-bottom: 80px;
+}
+
+#about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer {
+  padding: 80px 0;
+}
+
+h2 {
+  margin-top: 60px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin: 0 0 40px 0;
+}
+
+.project-description {
+  margin: 0 0 30px 0;
+}
+
+.project-link {
+  margin: 40px 0 60px 0;
+}
+
+#skills {
+  padding-top: 80px;
+  background-color: #eee4f0;
+}
+
+#skills h4 {
+  margin: 20px 0;
+}
+figure {
+  margin: 20px 0 40px 0;
+}
+
+.skills-header {
+  margin-bottom: 20px;
+}
+
+.about-info h3 {
+  margin: 40px 0 40px 0;
+}
+
+.about-p {
+  margin: 0 0 30px 0;
+}
+
+#contact h3 {
+  margin-bottom: 60px;
+}
+
+.contact-info {
+  margin: 0 0 60px 0;
+}
+
+#contact h5 {
+    margin: 0 0 40px 0;
+}
+
+/* Header  Styles */
+header,
+footer {
+  background-color: #eee4f0;
+}
+header nav ul li {
+  font-size: .75rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav #contact-link {
+  background-color: #351D77;
+  padding: 10px 10px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bolder;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  width: 100%;
+}
+
+header h2 {
+  width: 100%
+}
+
+/* ==========================================================================
+                                Mobile Styles 
+   ========================================================================== */
+
+/*
+/* Portfolio */
+#projects,
+#skills {
+  width: 100%;
+}
+
+#work h3 {
+  width: 100%;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.home-portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-portfolio-piece h4 {
+  font-weight: bold;
+}
+
+.home-portfolio-piece figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+.project-link {
+  background-color: #453E4F;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+
+.project-link:hover {
+  background-color: #CAC4D1;
+  color: #351D77;
+}
+
+/*#skills {
+  background-color: #FFE8D6;
+}*/
+
+#skills h4 {
+  margin: 40px 0 40px 0;
+  font-weight: bold;
+}
+
+.language-wrapper p,
+.tool-wrapper p {
+  background-color: #D4D3E9;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.tool {
+  width: 100%;
+}
+
+/* About */
+#about {
+  width: 100%;
+}
+
+#profile-image {
+  width: 90%;
+}
+
+#about h3,
+#about h4,
+#about p {
+  color: #351D77;
+}
+
+/* ------ Header & Footer Styles ------ */
+
+footer .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer .contact-info {
+  width: 60%;
+}
+
+footer h4 {
+  width: 100%;
+}
+
+footer .follow-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer .social-media-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  width: 100%;
+}
+
+footer .social-media-icons li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons li i {
+  font-size: 1.875rem;
+  color: #351D77;
+}
 
 /* ==========================================================================
    Helper classes

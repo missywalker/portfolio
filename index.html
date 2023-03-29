@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -21,6 +21,11 @@
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bb829e8a06.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,12 +41,12 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <li><a  href="#contact" id="contact-link" >Contact Me</a></li>
         </ul>
       </nav>
       <div class="header-title">
     <h1>Hello, I'm Melissa Walker!</h1>
-    <h2>I am a Front End Web Developer, based out of Bel Air, Maryland,  who loves to create beautiful and responsive websites - with clean code! </h2>
+    <h2>I am a Front End Web Developer based out of Bel Air, Maryland, who loves to create beautiful and responsive websites - with clean code! </h2>
 </div>
 </div>
   </header>
@@ -52,42 +57,50 @@
       <div class="portfolio-wrapper">
          <!--------------------- Guess the word------------------------>
         <div class="portfolio-piece">
-          <!-- This is for project image<figure></figure>   !-->
+        <figure>
+          <a href="https://missywalker.github.io/guess-the-word/" target="_blank"><img src="img/guess-the-word.png" alt="Guess the Word Game"></a>
+        </figure>   
           <h4 class="project-name">Guess the Word</h4>
           <p class="project-description"> Players guess the word, one letter at the time. 
             If they can guess the word before their allotted chances are up, then they win. 
             When the browser reloads or the game reloads, the word changes. </p>
-          <p><span>Skills:</span>JavaScript</p>
-          <p> <span>Tools:</span>GitHub Pages, JSON</p>
+          <p><span>Skills: </span>JavaScript</p>
+          <p> <span>Tools: </span>GitHub Pages, JSON</p>
           <a class="project-link" href="https://missywalker.github.io/guess-the-word/" target="_blank">live page</a>
         </div>
           <!--------------------- GitHub Repo Gallery------------------------>
         <div class="portfolio-piece">
-          <!-- This is for project image<figure></figure>   !-->
+         <figure>
+          <a href="https://missywalker.github.io/github-repo-gallery-main/" target="_blank"><img src="img/github-repo-gallery.png" alt="GitHub Repo Gallery"></a>
+         </figure> 
           <h4 class="project-name">GitHub Repo Gallery</h4>
           <p class="project-description">Utilizes GitHub’s API to pull data from my GitHub profile 
             to create a gallery of my repos.</p>
-          <p> <span>Skills:</span>JavaScript</p>
-          <p> <span>Tools:</span>GitHub Pages, REST API</p>
+          <p> <span>Skills: </span>JavaScript</p>
+          <p> <span>Tools: </span>GitHub Pages, REST API</p>
           <a class="project-link" href="https://missywalker.github.io/github-repo-gallery-main/" target="_blank">live page</a>
         </div>
           <!--------------------- Sticky Note App ------------------------>
         <div class="portfolio-piece">
-          <!-- This is for project image<figure></figure>   !-->
+        <figure>
+           <a href="https://e1m26x.csb.app/" target="_blank"><img src="img/sticky-notes-zoomed.png" alt="Sticky Note App"></a>
+        </figure> 
           <h4 class="project-name">Sticky Note App</h4>
           <p class="project-description">This functional react app is great at keeping notes. 
             A user can create, delete and search notes. Goodbye paper sticky notes...</p>
-          <p> <span>Skills:</span>React, JSX, Components, ES6, Local Storage</p>
-          <p> <span>Tools:</span>CodeSandbox, Props, State</p>
+          <p> <span>Skills: </span>React, JSX, Components, ES6, Local Storage</p>
+          <p> <span>Tools: </span>CodeSandbox, Props, State</p>
           <a class="project-link" href="https://e1m26x.csb.app/" target="_blank">live page</a>
         </div>
         <!--------------------- Unplugged------------------------>
         <div class="portfolio-piece">
-          <!-- This is for project image<figure></figure>   !-->
+        <figure>
+         <a href="https://missywalker.github.io/unplugged-project/" target="_blank"><img src="img/unplugged.png" alt="Unplugged"></a>
+        </figure>   
           <h4 class="project-name">Unplugged</h4>
           <p class="project-description"> Multi-page responsive web design that adapts to phones, tablets, and desktops. </p>
-          <p> <span>Skills: </span>HTML, CSS, Flexbox</p>
-          <p> <span>Tools:</span>Chrome DevTools, GitHub Pages</p>
+          <p> <span> Skills: </span>HTML, CSS, Flexbox</p>
+          <p> <span> Tools: </span>Chrome DevTools, GitHub Pages</p>
           <a class="project-link" href="https://missywalker.github.io/unplugged-project/" target="_blank">live page</a>
         </div>
       </div>
@@ -98,11 +111,9 @@
       <h3 class="skills-header">Skills</h3>
       <h4>Developer Skills</h4>
       <div class="language-wrapper">
-      <p class="skill">HTML</p>
-      <p class="skill">CSS</p>
+      <p class="skill">HTML &amp; CSS</p>
       <p class="skill">Responsive Web Devolopment</p>
-      <p class="skill">Git</p>
-      <p class="skill">GitHub</p>
+      <p class="skill">Git &amp; GitHub</p>
       <p class="skill">JavaScript</p> 
       <p class="skill">React</p>
       </div>
@@ -120,13 +131,14 @@
   <div class="content-wrapper">
     <div class="about-content-wrapper">
       <!--- Place image of MEEEE here :)  -->
-      <figure></figure>
+      <figure>
+        <img src="./img/missy-profile.jpeg" alt id="profile-image">
+      </figure>
       <div class="about-info">
         <h3>Hello! I'm Melissa Walker. </h3>
         <h4>I'm a Front End Web Developer who enjoys coding clean and responsive websites.</h4>
-        <p class="about-p">I have always had a fascination in web development.
-           I got my first Toshiba laptop at 10 years old. My interest first began with editing Myspace backgrounds.
-           I was the go to person in my family for adding cool features. </p>
+        <p class="about-p"> I got my first Toshiba laptop at 10 years old and from then on I have had an interest in web development.  
+            It all began with me editing Myspace backgrounds and from there I was the go to person in my family. Now I enjoy making responsive websites. In my spare time I love to paint and do crafts with my daughter 5 year old daughter, Eleanor.  </p>
       </div>
     </div>
   </div>
@@ -134,11 +146,19 @@
 </main>
 <footer id="contact">
 <div class="content-wrapper">
-  <h4>Let's Connect</h4>
+  <div class="contact-info">
+  <h3>Let's Connect</h3>
   <h5>Contact Me</h5>
-  <p class="footer-p"><span>Email:</span>missywalker2015@gmail.com </p>
+  <p class="footer-p"><i class="fa-sharp fa-solid fa-envelope" style="color: #3b0057;"></i> missywalker2015@gmail.com </p>
   <h5>Follow Me</h5>
+  <p class="social-media-icons">
+  <a href="https://github.com/missywalker"></a><i class="fa-brands fa-github" style="color: #410a66;"></i></a>
+ </p>
+<p class="social-media-icons">
+   <a href="https://www.linkedin.com/in/missy-walker-54749a26b/"><i class="fa-brands fa-linkedin" style="color: #410a66;"></i></a>
+  </p>
   <!-- PUT SOCIAL MEDIA LOGOS HERE- Github & LinkedIn. :) -->
+  </div>
 </div>
 </footer>
 </body>
