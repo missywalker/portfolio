@@ -427,7 +427,7 @@ footer .contact-wrapper {
 }
 
 @keyframes jumpingAnimation {
-  0 {
+  0% {
     transform: translate3d(0, 0,0);
   }
   50% {
@@ -477,6 +477,11 @@ footer .social-media-icons li {
   align-items: center;
 }
 
+.copyright {
+  width: 100%;
+  margin: 70px 0 0 0;
+  font-weight: bolder;
+}
 /* ==========================================================================
                                   Tablet Styles
    ========================================================================== */
